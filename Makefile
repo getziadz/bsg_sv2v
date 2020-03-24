@@ -125,7 +125,7 @@ $(IVERILOG_BUILD_DIR):
 	cd $@; git checkout v10_2
 	cd $@; sh autoconf.sh
 	cd $@; ./configure --prefix=$@/install
-	cd $@; make -j4
+	cd $@; make
 	cd $@; make install
 
 $(PYPY3_BUILD_DIR):
